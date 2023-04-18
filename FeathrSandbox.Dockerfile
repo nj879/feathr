@@ -22,7 +22,6 @@ USER root
 
 ## Install dependencies
 RUN apt-get update -y && apt-get install -y nginx freetds-dev sqlite3 libsqlite3-dev lsb-release redis gnupg redis-server lsof
-
 # UI Sectioin
 ## Remove default nginx index page and copy ui static bundle files
 RUN rm -rf /usr/share/nginx/html/*
